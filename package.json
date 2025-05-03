@@ -1,0 +1,17 @@
+{
+  "name": "anime-random-peek-image-api",
+  "version": "1.0.0",
+  "description": "Anime Random Peek Image API",
+  "author": "ittuann <ittuann@outlook.com> (https://github.com/ittuann)",
+  "license": "MIT",
+  "keywords": [],
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "serve": "echo \"Serve\""
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "serverless-http": "^3.2.0"
+  }
+}
