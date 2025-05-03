@@ -5,7 +5,7 @@ This project provides a API to fetch a randomly anime image.
 **Live Demo: <https://anime-random-peek-image-api.vercel.app>**
 
 <a href="https://github.com/ittuann/Anime-Random-Peek-Image-API" target="_blank">
-  <img src="https://anime-random-peek-image-api.vercel.app" alt="Anime Random Peek Image" align="right" height="720" />
+  <img src="https://anime-random-peek-image-api.vercel.app" alt="Anime Random Peek Image" align="right" height="425" />
 </a>
 
 - What is "Peek"?
