@@ -5,7 +5,7 @@ This project provides a API to fetch a randomly anime image.
 **Live Demo: <https://anime-random-peek-image-api.vercel.app>**
 
 <a href="https://github.com/ittuann/Anime-Random-Peek-Image-API" target="_blank">
-  <img src="https://anime-random-peek-image-api.vercel.app" alt="Anime Random Peek Image" align="right" height="425" />
+  <img src="https://anime-random-peek-image-api.vercel.app" alt="Anime Random Peek Image" align="right" height="720" />
 </a>
 
 - What is "Peek"?
@@ -23,7 +23,7 @@ For Markdown：
 For right-aligned, use the HTML tag:
 
 ```html
-<img src="https://anime-random-peek-image-api.vercel.app" alt="Anime Random Peek Image" align="right">
+<img src="https://anime-random-peek-image-api.vercel.app" alt="Anime Random Peek Image" align="right" />
 ```
 
 With custom size:
@@ -34,4 +34,13 @@ With custom size:
 
 - How it works
 
-This project is built with Node.js and Express, using a serverless architecture, deployed on Vercel.
+This project is built with Node.js and Express, using the serverless architecture, deployed on Vercel.
+
+- Develop
+
+```bash
+git clone https://github.com/ittuann/Anime-Random-Peek-Image-API.git
+cd Anime-Random-Peek-Image-API
+pnpm i
+pnpm start
+```

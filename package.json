@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "start": "node api/random.js",
-    "dev": "npx vercel dev"
+    "dev": "vercel dev"
   },
   "dependencies": {
     "express": "^5.1.0",

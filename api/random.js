@@ -5,9 +5,9 @@ const path = require("path");
 
 const app = express();
 
-// 本地图片路径
+// Local image directory path
 const imagesDir = path.join(__dirname, "..", "public", "images");
-// 启动时读取所有图片文件名
+// Read all image filenames on startup
 const images = fs
   .readdirSync(imagesDir)
   .filter((f) => /\.(jpe?g|png|webp|gif)$/i.test(f));
@@ -17,11 +17,14 @@ app.get("/", (req, res) => {
     return res.status(404).send("No images found");
   }
 
-  // 随机选一张
-  const randomImage = images[Math.floor(Math.random() * images.length)];
+  // Select a random image
+  // const randomImage = images[Math.floor(Math.random() * images.length)];
+  // Use timestamp for pseudo-random selection
+  const randomImage = images[Math.floor(Date.now() / 1000) % images.length];
+
   const imagePath = path.join(imagesDir, randomImage);
 
-  // 直接返回文件
+  // Return file directly
   res.sendFile(imagePath);
 });
 
@@ -33,6 +36,6 @@ if (require.main === module) {
   });
 }
 
-// 导出
+// Export
 module.exports = app;
 module.exports.handler = serverless(app);
