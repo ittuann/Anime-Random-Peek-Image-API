@@ -5,13 +5,17 @@
   "author": "ittuann <ittuann@outlook.com> (https://github.com/ittuann)",
   "license": "MIT",
   "keywords": [],
-  "main": "index.js",
+  "main": "api/random.js",
   "private": true,
   "scripts": {
-    "serve": "echo \"Serve\""
+    "start": "node api/random.js",
+    "dev": "npx vercel dev"
   },
   "dependencies": {
     "express": "^5.1.0",
     "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "vercel": "^41.7.0"
   }
 }
