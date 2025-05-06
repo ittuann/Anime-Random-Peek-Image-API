@@ -20,13 +20,19 @@ For Markdown：
 ![Anime Random Peek Image](https://anime-random-peek-image-api.vercel.app)
 ```
 
+Specify an image:
+
+```md
+![Kurisu Makise](https://anime-random-peek-image-api.vercel.app?img=Kurisu%20Makise.png)
+```
+
 For right-aligned, use the HTML tag:
 
 ```html
 <img src="https://anime-random-peek-image-api.vercel.app" alt="Anime Random Peek Image" align="right" />
 ```
 
-With custom size:
+Custom size:
 
 ```html
 <img src="https://anime-random-peek-image-api.vercel.app" alt="Anime Random Peek Image" align="right" height="425" />
@@ -44,3 +50,7 @@ cd Anime-Random-Peek-Image-API
 pnpm i
 pnpm start
 ```
+
+Deploy your own version with one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fittuann%2FAnime-Random-Peek-Image-API&project-name=anime-random-peek-image-api&repository-name=anime-random-peek-image-api&demo-title=Anime%20Random%20Peek%20Image&demo-description=Anime%20Random%20Peek%20Image&demo-url=https%3A%2F%2Fanime-random-peek-image-api.vercel.app)

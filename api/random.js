@@ -17,12 +17,20 @@ app.get("/", (req, res) => {
     return res.status(404).send("No images found");
   }
 
-  // Select a random image
-  // const randomImage = images[Math.floor(Math.random() * images.length)];
-  // Use timestamp for pseudo-random selection
-  const randomImage = images[Math.floor(Date.now() / 1000) % images.length];
+  let selectedImage;
+  // Check for the existence of parameters
+  if (req.query.img && images.includes(req.query.img)) {
+    // If a valid image name parameter is provided, the specified image is used
+    selectedImage = req.query.img;
+  } else {
+    // Default randomly selects an image
 
-  const imagePath = path.join(imagesDir, randomImage);
+    // const selectedImage = images[Math.floor(Math.random() * images.length)];
+    // Use timestamp for pseudo-random selection
+    selectedImage = images[Math.floor(Date.now() / 1000) % images.length];
+  }
+
+  const imagePath = path.join(imagesDir, selectedImage);
 
   // Return file directly
   res.sendFile(imagePath);
